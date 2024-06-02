@@ -12,6 +12,9 @@
     padding: 20px;
     color: #585858;
 }
+.nav .gemini{
+    cursor: pointer;
+}
 .main .nav img{
     width: 40px;
     border-radius: 50%;
@@ -173,7 +176,7 @@
 @media (max-width : 500px) {
     .main-bottom input{
         flex: none;
-        width: 150px;
+        width: 70%;
         font-size: 18px;
     }
     .main-bottom img{
@@ -195,7 +198,7 @@
 @media (max-width:400px) {
     .main-bottom input{
         flex: none;
-        width: 130px;
+        width: 70%;
         font-size: 14px;
     }
     .main-bottom img{
@@ -211,5 +214,13 @@
     .search-box div{
         display: flex;
         gap: 0px;
+    }
+}
+
+@media (max-width:300px){
+    .main-bottom input{
+        flex: none;
+        width: 70%;
+        font-size: 13px;
     }
 }

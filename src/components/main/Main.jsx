@@ -5,7 +5,7 @@ import { Context } from '../../context/Context'
 
 const Main = () => {
 
-    const {input, setInput, prevPrompt, setPrevPrompts, onSent, loading, resultData, showResult,recentPrompt, setRecentPrompt} = useContext(Context)
+    const {input, setInput, prevPrompt, setPrevPrompts, onSent, loading, resultData, showResult,recentPrompt, setRecentPrompt,newChat} = useContext(Context)
 
 
     let cardText = ["Suggest beautiful places to see on an upcoming road trip", "Briefly summarize this concept: urban planning", "Brainstorm team bonding activities for our work retreat", "Improve the readability of the following code"]
@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div className='main'>
         <div className="nav">
-            <p>Gemini</p>
+            <p onClick={newChat} className='gemini' >Gemini</p>
             <img src={assets.user_icon} alt="" />
         </div>
         <div className="main-container">
